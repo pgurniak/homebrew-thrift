@@ -13,6 +13,12 @@ class Thrift0110 < Formula
     depends_on "pkg-config" => :build
   end
 
+  bottle do
+    root_url "https://github.com/pgurniak/homebrew-thrift/releases/download/thrift-0.11.0-test"
+    cellar :any
+    sha256 "058b8fef9dc28be35961708c20bc31e607cc1b7de0e36b869cde80fb3ed17a8c" => :mojave
+  end
+
   depends_on "bison" => :build
   depends_on "boost"
   depends_on "openssl"
